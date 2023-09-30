@@ -256,6 +256,9 @@ hr {
   background-image: url(../img/projects/TerrariumSimulator.gif);
 }
 
+.card-image--space_shooter {
+  background-image: url(https://raw.githubusercontent.com/gabrieltsants/space-shooter/main/demo.gif);
+}
 .card-title {
   color: var(--color-background);
   font-size: 1.25rem;
