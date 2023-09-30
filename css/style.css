@@ -1,0 +1,377 @@
+:root {
+  --color-background: #000000;
+  --color-background-secondary: #140c04;
+  --color-background-light: #034656;
+}
+
+body {
+  min-width:207px; 
+  margin: 0;
+  background: linear-gradient(180deg, var(--color-background) 70%, var(--color-background-secondary) );
+  background-attachment: fixed;
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+}
+
+.body-light {
+  background: white;
+}
+
+a, p, h1, h2, h3, h4, h5, h6, img  {
+  color: white;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+hr {
+  width: 80%;
+  margin-bottom: 5%;
+}
+
+.container {
+  flex-wrap: wrap;
+  margin-left: 20%;
+  animation: fade-in 3s;
+}
+
+.buttontoggleDarkmode {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  align-self: flex-start;
+  width: 3em;
+  margin: 1rem 0 0 1rem;
+}
+
+.buttontoggleDarkmodeImg {
+  filter: invert(100%);  
+}
+
+.buttontoggleWhitemodeImg{
+  filter: hue-rotate(180deg);
+}
+
+.about {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: white;
+  width: 20%;
+  background-color: var(--color-background);
+  background-image: url(../img/others/profileBackground.png);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.about-light {
+  background-color: var(--color-background-light);
+  background-image: url(../img/others/profileBackgroundLight.jpeg);
+}
+
+.profile-picture {
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  border-radius: 50%;
+  width: 40%;
+  animation: fade-in 1.5s;
+}
+
+.profile-picture:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
+.about h3, h4{
+  padding: 5% 0;
+  box-sizing: border-box;
+  font-weight: bold;
+  font-size: large;
+}
+
+.about hr, .about h3, h4 {
+  animation: fade-in 2s;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact >  a img {
+  width: 3em;
+  transition: all .3s ease-in;
+  filter: invert(100%);  
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.contact >  a img:hover {
+  filter: contrast(200%);
+  filter: invert(20%);  
+}
+
+.contact-light > a img {
+  filter: invert(0%);  
+}
+
+.contact-light >  a img:hover {
+  filter: contrast(200%);
+  filter: invert(100%);  
+}
+
+.icon-linkedin {
+  animation: fade-in 3s;
+}
+
+.icon-github {
+  animation: fade-in 6s;
+}
+
+.icon-email {
+  animation: fade-in 9s;
+}
+
+.terminal {
+  color: #00FF41;
+  pointer-events: none;
+  margin: 20px 0;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 10%;
+  text-align: center;
+}
+
+.content h1 {
+  font-family: 'Roboto', sans-serif;
+  padding: 1rem 0;
+  font-size: 150%;
+  width: 100%;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.card-item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 0%;
+  flex: 1 0 21%
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex-wrap: wrap;
+  width: 20rem;
+  flex: 1;
+}
+.card-image:hover {
+  filter: contrast(120%);
+}
+
+.cards p{
+  color: var(--color-background);
+}
+
+.cards a {
+  color: var(--color-background);
+}
+
+.card-content {
+  display: flex;
+  gap: 5px 0px;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 1rem 0 0 0;
+  align-items: center;
+}
+
+.card-image {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  overflow: hidden;
+  position: relative;
+  transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
+  background-size: cover;
+  background-color: black;
+}
+
+.card-image::before {
+  padding-top: 66.6%;
+}
+.card-image--quiz {
+  background-image: url(../img/projects/quiz.jpeg);
+}
+
+.card-image--parking {
+  background-image: url(../img/projects/parking.jpg);
+  
+}
+
+.card-image--LaravelTaskManager {
+  background-image: url(../img/projects/LaravelTaskManager.png);
+}
+
+.card-image--race2X {
+  background-image: url(../img/projects/race2x.jpg);
+}
+
+.card-image--terrariumSimulator {
+  background-image: url(../img/projects/TerrariumSimulator.gif);
+}
+
+.card-title {
+  color: var(--color-background);
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.card-text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.badge {
+  display: flex;
+  justify-content:center;
+}
+
+.badge img {
+  margin: 0.5rem 0;
+  max-width: 25px;
+  max-height: 25px;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.btn:hover, .btn:focus {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+ 
+.card-image::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%; 
+}
+
+@media screen and (max-width: 1090px){
+  .content, .about {
+    width: 100%;
+  }
+  
+  .about{
+    position: relative;
+    min-height: 100%;
+  }
+
+  .card-item{
+    width: 25%;
+  }
+
+  .container{
+    margin-left: 0%;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .card-item {
+    width: 100%;
+  }
+  .card {
+    flex: 1;
+  }
+}
+
+
+@keyframes fade-in {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fade-in {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fade-in {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fade-in {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fade-in {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@keyframes animateBg {
+    0%,100%
+    {
+        transform:scale(1);
+    }
+    50%
+    {
+        transform:scale(1.2);
+    }
+}
