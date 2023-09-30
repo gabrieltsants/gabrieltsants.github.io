@@ -257,7 +257,7 @@ hr {
 }
 
 .card-image--space_shooter {
-  background-image: url(https://raw.githubusercontent.com/gabrieltsants/space-shooter/main/demo.gif);
+  background-image: url(../img/projects/spaceShooter.gif);
 }
 .card-title {
   color: var(--color-background);
