@@ -1,7 +1,7 @@
 :root {
   --color-background: #000000;
   --color-background-secondary: #140c04;
-  --color-background-light: #034656;
+  --color-background-light: #badae2;
 }
 
 body {
@@ -66,14 +66,14 @@ hr {
   background-color: white;
   width: 20%;
   background-color: var(--color-background);
-  background-image: url(../img/others/profileBackground.png);
+  background-image: url(../img/others/profileBackgroundDark.png);
   background-repeat: no-repeat;
   min-height: 100vh;
 }
 
 .about-light {
   background-color: var(--color-background-light);
-  background-image: url(../img/others/profileBackgroundLight.jpeg);
+  background-image: url(../img/others/profileBackgroundLight.png);
 }
 
 .profile-picture {
@@ -239,10 +239,6 @@ hr {
   background-image: url(../img/projects/quiz.jpeg);
 }
 
-.card-image--parking {
-  background-image: url(../img/projects/parking.jpg);
-  
-}
 
 .card-image--LaravelTaskManager {
   background-image: url(../img/projects/LaravelTaskManager.png);
@@ -258,6 +254,16 @@ hr {
 
 .card-image--space_shooter {
   background-image: url(../img/projects/spaceShooter.gif);
+}
+
+.card-image--parking {
+  background-image: url(../img/projects/parking.png);
+  
+}
+
+.card-image--phplinktester {
+  background-image: url(../img/projects/phplinktester.png);
+  
 }
 .card-title {
   color: var(--color-background);
