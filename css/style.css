@@ -244,16 +244,19 @@ hr {
   background-image: url(../img/projects/LaravelTaskManager.png);
 }
 
-.card-image--race2X {
-  background-image: url(../img/projects/race2x.jpg);
+.card-image--WatsonLlama {
+  background-image: url(../img/projects/watsonLlama.png);
+  background-size: contain;
 }
 
 .card-image--terrariumSimulator {
   background-image: url(../img/projects/TerrariumSimulator.gif);
+  background-size: contain;
 }
 
 .card-image--space_shooter {
   background-image: url(../img/projects/spaceShooter.gif);
+  background-size: contain;
 }
 
 .card-image--parking {
